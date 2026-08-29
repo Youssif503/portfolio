@@ -1,0 +1,20 @@
+<section class="min-h-[70vh] flex flex-col justify-center items-center text-center mt-12 relative">
+  <div class="absolute w-[600px] h-[600px] bg-white/[0.02] rounded-full blur-[100px] pointer-events-none">
+  </div>
+  <div class="text-center fade-in-up relative z-10 max-w-5xl">
+
+    <h1 class="milan-font font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl text-primary leading-tight"
+      dir="rtl">
+      {{ hero.greeting }}
+    </h1>
+
+    <p class="mt-4 text-lg md:text-xl text-on-surface-variant/60 font-light" dir="rtl">
+      {{ hero.tagline }}
+    </p>
+
+  </div>
+  <p
+    class="font-body-lg text-body-lg text-on-surface-variant mt-10 max-w-2xl relative z-10 text-center fade-in-up delay-200 font-light">
+    {{ hero.summary }}
+  </p>
+</section>

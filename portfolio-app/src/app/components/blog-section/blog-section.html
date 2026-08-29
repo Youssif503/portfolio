@@ -1,0 +1,17 @@
+<section class="mt-section-gap max-w-4xl mx-auto" id="blogs">
+  <div class="flex items-end justify-between mb-12 border-b border-white/5 pb-6" appScrollStagger>
+    <div>
+      <span class="font-label-sm text-label-sm text-on-surface-variant/50 tracking-widest block mb-2">Writing</span>
+      <h2 class="font-headline-lg text-headline-lg text-primary milan-font text-5xl">Blog</h2>
+    </div>
+    <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2 pb-2"
+      href="#">
+      <span class="">View all</span> <span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+    </a>
+  </div>
+  <div class="flex flex-col gap-4">
+    @for (post of posts; track post.url) {
+      <app-blog-post-card [post]="post" />
+    }
+  </div>
+</section>
