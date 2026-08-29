@@ -1,0 +1,11 @@
+<section class="mt-section-gap" id="projects">
+  <div class="mb-16 text-center flex flex-col items-center" appScrollStagger>
+    <span class="font-label-sm text-label-sm text-on-surface-variant/50 tracking-widest mb-4">Featured Work</span>
+    <h2 class="font-headline-lg text-headline-lg text-primary milan-font text-5xl">My Projects</h2>
+  </div>
+  <div class="max-w-4xl mx-auto flex flex-col gap-8">
+    @for (project of projects; track project.title) {
+      <app-project-card [project]="project" />
+    }
+  </div>
+</section>

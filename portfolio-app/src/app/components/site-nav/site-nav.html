@@ -1,0 +1,14 @@
+<nav
+  class="bg-background/40 backdrop-blur-xl flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-6 max-w-container-max mx-auto docked full-width top-0 sticky z-40 border-b border-white/[0.03]">
+  <div class="hidden md:flex gap-12">
+    @for (link of links; track link.href) {
+      <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-all duration-300 tracking-wide"
+        [href]="link.href">{{ link.label }}</a>
+    }
+  </div>
+  <div class="flex gap-4">
+    <a class="text-on-surface-variant hover:text-primary transition-colors opacity-70 hover:opacity-100" href="#">
+      <app-github-icon />
+    </a>
+  </div>
+</nav>
